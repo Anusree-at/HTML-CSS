@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <style>
+        
+        ul{
+         list-style-type: none;
+    
+         background-color: rgb(245, 240, 240);
+         height: 100px;
+        }
+        li{
+         float: left;
+        }
+        li a{
+          display: block;
+          color: black;
+          padding: 15px 40px;
+          text-decoration: none;
+    
+          font-size: large;
+          font-weight: 100px;
+          font-family: monospace;
+          text-align: right;
+
+        }
+        li a:hover{
+          color: rgb(80, 185, 80);
+        }
+        .image1{
+             position: absolute;
+             z-index: -1;
+             opacity: 70%;
+
+         }
+         div h1{
+             color: white;
+             font-weight: 400;
+
+         }
+         .text{
+             text-align: center;
+             font-weight: bolder;
+             margin-top: 200px;
+             top: 300px;
+         }
+         .text h1{
+                font-weight: bolder;
+                color: azure;
+         }
+         .onion{
+              width: 320px;
+              height: 250px;
+              position: absolute;
+              left: 100px;
+              top: 670px;
+              float: right;
+
+         }
+         .veg{
+          width: 320px;
+          height: 250px;
+          position: absolute;
+          top: 670px;
+          left: 500px;
+         float: right;
+         }
+         .veg2{
+          width: 320px;
+          height: 250px;
+          position: absolute;
+          top: 670px;
+          left: 900px;
+         float: right;
+         
+         }
+         .box1{
+          width: 320px;
+          height: 50px;
+          position: absolute;
+          left: 100px;
+          top: 900px;
+          background-color: rgb(17, 172, 17);
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+          float: right;
+         }
+         .box2{
+          width: 320px;
+          height: 50px;
+          position: absolute;
+          left: 500px;
+          top: 900px;
+          background-color: rgb(17, 172, 17);
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+         }
+         .box3{
+         width: 320px;
+          height: 50px;
+          position: absolute;
+          left: 900px;
+          top: 900px;
+          background-color: rgb(17, 172, 17);
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+         }
+         .light{
+          height: 370px;
+          background-color: rgb(233, 229, 229);
+          position: relative;
+          top: 450px;
+          padding: 50px ;
+          padding-left: 130px;
+         }
+         .lemon{
+          height: 300px;
+          width: 480px;
+          background-color: rgb(188, 223, 223);
+          
+          
+         }
+         .lemon-img{
+          height: 300px;
+          width: 200px;
+          float: right;
+         }
+         .bowl{
+          height: 300px;
+          width: 480px;
+          background-color: rgb(243, 243, 14);
+          position: absolute;
+          float: right;
+          top: 1053px;
+          left: 690px;
+
+          
+         }
+         .salad{
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          float: right;
+         }
+         .textbox{
+          position: absolute;
+          top: 1400px;
+          left: 400px;
+          height: 100px;
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+         }
+         .button3 button{
+          background-color: rgb(61, 185, 61);
+          border-color:  rgb(61, 185, 61);
+         }
+         .carrot img{
+          height: 210px;
+          width: 210px;
+          margin: 28px;
+         }
+         .carrot{
+          position: absolute;
+          top: 1550px;
+          left: 150px;
+          }
+          .sale button{
+            background-color:  rgb(61, 185, 61);
+            border: none;
+            color: white;
+            
+          }
+          .sale button:hover{
+            background-color: black;
+          }
+          .textbox2{
+          position: absolute;
+          top: 30px;
+          left: 400px;
+          height: 100px;
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+         }
+         .container1{
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 115px;
+            right: 200px;
+            border: 2px solid rgb(230, 211, 211);
+            /* overflow: hidden; */
+            float: right;
+        }
+        .text4{
+            position: absolute;
+            bottom: 8px;
+            /* background-color: white; */
+            font-size: small;
+            width: 100%;
+            /* height: 200px; */
+        }
+        .container2{
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 115px;
+            right: 230px;
+            border: 2px solid rgb(230, 211, 211);
+            overflow: hidden;
+            float: right;
+        }
+        .text2{
+            position: absolute;
+            bottom: 8px;
+            
+            font-size: small;
+        }
+        .container3{
+            width: 300px;
+            height: 350px;
+            position: relative;
+            top: 115px;
+            right: 260px;
+            border: 2px solid rgb(230, 211, 211);
+            overflow: hidden;
+            float: right;
+        }
+        .text3{
+            position: absolute;
+            bottom: 8px;
+            color: black;
+            font-size: small;
+        }
+        .black{
+          height: 300px;
+          background-color: black;
+          color: white;
+          position: relative;
+          top: 1500px;
+          padding-top: 30px;
+        }
+        .black1{
+          
+          width: 280px;
+          margin-left: 100px;
+          font-size: small;
+          position: relative;
+          float: left;
+         
+          
+        }
+        .black2{
+          width: 380px;
+          position: relative;
+          float: left;
+          left: 115px;
+          font-size: small;
+        }
+        .black3{
+          width: 280px;
+          position: relative;
+          float: left;
+          left: 240px;
+          font-size: small;
+        }
+        .logobox{
+          width: 180px;
+          height: 80px;
+          background-color: rgb(245, 240, 240);
+          /* padding-left: 50px; */
+          position: absolute;
+          top: 60px;
+          left: 1000px;
+          text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-3 ">
+       <ul class="nav text-bg-dark" style="height: 45px;">
+        <div class="logobox">
+          <img src="/bootstrap images/Screenshot (83).png" alt="picture" class="logo" height="60px" width="80px">
+          <h2 style="color: rgb(66, 180, 66); padding: 0%; font-weight:200px;" >FreshShop</h2>
+        </div>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">Call Us: +918745623458</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;"  href="#">MY ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">OUR LOCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " style="color: white;" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" style="background-color: rgb(72, 172, 72); position: relative; left: 585px; top: 5px; color: white; font-size: small;" > Register Here</a>
+
+          </li>
+        </ul>
+        <ul style="padding-top: 20px;">
+          <li style="color: rgb(57, 190, 57);"><a href="home">HOME</a></li>
+          <li><a href="about" style="font-size: large;">ABOUT US</a></li>
+          <li><a href="shop" style="font-size: large;">SHOP</a></li>
+          <li><a href="gallery" style="font-size: large;">GALLERY</a></li>
+          <li><a href="contact" style="font-size: large;">CONTACT US</a></li>
+          <img src="/bootstrap images/8666693_search_icon.svg" alt="search" width="20px" height="20px" style="margin-top: 18px;">
+
+
+          
+      </ul>
+      <img src="/bootstrap images/colin-watts-_NMPU2fZfz4-unsplash.jpg" alt="img"  height="440px"; width= "1330px"; class="image1">
+      <div class="text">
+        <h1>Welcome To </h1>
+        <h1 style="color: white;">Freshshop</h1>
+        <p style="color: white;">See how your users experience your website in realtime or view </p>
+        <p style="color: white;">trends to see any changes in performance over time. </p>
+        </div>
+        <img src="/bootstrap images/vivek-sharma-rDDICrot22U-unsplash.jpg" alt="onion" class="onion">
+        <img src="/bootstrap images/bruna-branco-7r1HxvVC7AY-unsplash.jpg" alt="veg" class="veg">
+        <img src="/bootstrap images/inigo-de-la-maza-s285sDw5Ikc-unsplash.jpg" alt="veg2" class="veg2">
+        <div class="box1">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="box2">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="box3">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="light">
+          <div class="lemon">
+            <img src="/bootstrap images/emily-sanburg-KzDKyDi8wos-unsplash.jpg" alt="lemon" class="lemon-img">
+            <div style="width: 250px; height: 290px; text-align: center; border: 1px; border-style: solid; border-width: 5px;  border-color: black; border-radius: 31%; border-left: none; border-top: none;">
+            <h1>FreshShop</h1>
+            <h2>offer for</h2>
+            <h1>50% OFF</h1>
+            <p style="font-size: smaller;">Nulla ut urna egastas, porta libero i, suscript orci. Quisque in lectus sit amet urna dignis-sim feugiat. Mauris molestie 
+            egestas pharetra. Ut finibus carsus nunc sed mollis.</p>
+            </div>
+            <button style="width: 100PX; height: 25px; background-color:  rgb(57, 190, 57); position: absolute; left: 376px; top: 310px;">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="bowl">
+            <img src="/bootstrap images/sambazon-qfIVXu7nxGU-unsplash1.jpg" alt="img" class="salad">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash1.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 50px; top: 180px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash1.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 20px; top: 190px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash1.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 90px; top: 200px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash1.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 70px; top: 190px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash2.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 120px; top: 190px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash2.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 10px; top: 130px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash2.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 40px; top: 190px;">
+            <img src="/bootstrap images/jess-bailey-0uns8eQn_g8-unsplash2.jpg" width="15px" height="15px" style="border-radius: 50%; position: absolute; left: 20px; top: 150px;">
+            <div style="width: 250px; height: 290px; float: right; text-align: center; border: 1px; border-style: solid; border-width: 5px;  border-color: black; border-radius: 31%; border-right: none; border-top: none; ">
+             <h1>FreshShop</h1>
+            <h2>offer for</h2>
+            <h1>50% OFF</h1>
+            <p style="font-size: smaller;">Nulla ut urna egastas, porta libero i, suscript orci. Quisque in lectus sit amet urna dignis-sim feugiat. Mauris molestie 
+            egestas pharetra. Ut finibus carsus nunc sed mollis.</p>
+            </div>
+            <button style="width: 100PX; height: 25px; background-color:  rgb(57, 190, 57); position: absolute; left: 100px; top: 260px;">SHOP NOW</button>
+          </div>
+          <div class="textbox">
+            <h1 style="color: black;">Fruits & Vegetables</h1>
+            <p style="color: rgb(152, 188, 219);">Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+          </div>
+        </div>
+      <div class="button3" style="position: absolute; left: 550px; top: 1500px;">
+        <button>All</button>
+        <button>Top featured</button>
+        <button>Best seller</button>
+      </div>
+      <div class="carrot" style=" width: 1100px;">
+        <img src="/bootstrap images/k8-GHRT9j21m2M-unsplash.jpg" alt="img"> 
+        <img src="/bootstrap images/lars-blankers-6Z7Ss9jlEL0-unsplash.jpg" alt="img">
+        <img src="/bootstrap images/vitor-paladini-UqgTtfaikio-unsplash.jpg" alt="img">
+        <img src="/bootstrap images/charlesdeluvio-yPI38imbQSI-unsplash.jpg" alt="img">
+      </div>
+    <div class="sale">
+      <BUtton style="position: absolute; top: 1578px; left: 342px;">SALE</BUtton>
+      <BUtton style="position: absolute; top: 1578px; left: 611px;">NEW</BUtton>
+      <BUtton style="position: absolute; top: 1578px; left: 883px;">SALE</BUtton>
+      <BUtton style="position: absolute; top: 1578px; left: 1153px;">SALE</BUtton>
+    </div>
+    <div style="font-size: small; position: absolute; top: 1781px; left: 178px; background-color: rgb(205, 222, 236); width: 210px; height: 65px;">
+      <p>Lorem ipsum dolor sit amet</p>
+      <button style="background-color: rgb(47, 179, 47); border: none;">$7.79</button>
+    </div>
+    <div style="font-size: small; position: absolute; top: 1781px; left: 448px; background-color: rgb(205, 222, 236); width: 210px; height: 65px;">
+      <p>Lorem ipsum dolor sit amet</p>
+      <button style="background-color: rgb(47, 179, 47); border-color: none;">$9.79</button>
+    </div>
+    <div style="font-size: small; position: absolute; top: 1781px; left: 719px; background-color: rgb(205, 222, 236); width: 210px; height: 65px;">
+      <p>Lorem ipsum dolor sit amet</p>
+      <button style="background-color: rgb(47, 179, 47); border: none;">$10.79</button>
+    </div>
+    <div style="font-size: small; position: absolute; top: 1781px; left: 989px; background-color: rgb(205, 222, 236); width: 210px; height: 65px;">
+      <p>Lorem ipsum dolor sit amet</p>
+      <button style="background-color: rgb(47, 179, 47); border: none;">$15.79</button>
+    </div>
+    <div style="background-color:  rgb(222, 234, 243); height: 500px; position: absolute; top: 1900px; width: 100%;">
+    <div class="textbox2">
+      <h1 style="color: black;">Latest blog</h1>
+      <p style="color: rgb(152, 188, 219);">Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+    </div>
+    
+      <div class="container1">
+        <img src="/bootstrap images/sneha-cecil-Qt6ojt3CacE-unsplash.jpg" width="100%" height="200px">
+        <div class="text4">
+          <h5>Fusce in augue non nisi fringilla</h5>
+          Nulla ut urna egastas, porta libero i, suscript orci. Quisque in lectus sit amet urna dignis-sim feugiat. Mauris molestie 
+          egestas pharetra. Ut finibus carsus nunc sed mollis. 
+        </div>
+    </div>
+
+    <div class="container2">
+      <img src="/bootstrap images/nick-fewings-gpP-OkJ5BbI-unsplash.jpg" width="100%" height="200px" >
+      <div class="text2">
+          
+          <h5>Fusce in augue non nisi fringilla</h5>
+          Nulla ut urna egastas, porta libero i, suscript orci. Quisque in lectus sit amet urna dignis-sim feugiat. Mauris molestie 
+          egestas pharetra. Ut finibus carsus nunc sed mollis.
+      </div>
+  </div>
+  <div class="container3">
+      <img src="/bootstrap images/philippe-collard-B4y0dFOq510-unsplash.jpg" width="100%" height="200px" >
+      <div class="text3">
+        <h5>Fusce in augue non nisi fringilla</h5>
+        Nulla ut urna egastas, porta libero i, suscript orci. Quisque in lectus sit amet urna dignis-sim feugiat. Mauris molestie 
+        egestas pharetra. Ut finibus carsus nunc sed mollis.
+      </div>
+  
+  </div>
+
+</div>
+    <div class="black">
+      <div class="black1">
+        <h2 style="border-bottom-color: rgb(17, 172, 17); border-style: solid; border-spacing: 10px; border-top: hidden; border-left: 0cap; border-right: 0cap;">business Time</h2>
+        <p>Monday-Friday: 08.00am to 05.00pm</p>
+        <p>Saturday: 10.00am-08.00pm</p>
+        <p>Sunday: closed</p>
+      </div>
+      <div class="black2">
+        <h2 style="border-bottom-color: rgb(17, 172, 17); border-style: solid; border-spacing: 10px; border-top: hidden; border-left: 0cap; border-right: 0cap;">ABOUT FREHSHOP</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illo alias. Dolorum, et. Ducimus, deleniti, ipsum corporis dignissimos dolor suscipit omnis, eligendi neque quam doloremque eaque aut natus harum doloribus!
+         Uit enim and minim veniam quis nostrud exercitation ullamo thdgs hssuu nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="black3">
+        <h2 style="border-bottom-color: rgb(17, 172, 17); border-style: solid; border-spacing: 10px; border-top: hidden; border-left: 0cap; border-right: 0cap;">CONTACT US</h2>
+        <p>Address: Michael l ,Days 3756</p>
+        <p>Preston Street Wichita</p>
+        <p>KS 67213</p>
+
+        <p>Phone: +1-888705770</p>
+      </div>
+    </div>
+    <button style="background-color: rgb(71, 185, 67); color: white; position: relative; bottom: 680px; left: 620px;">SHOP NOW</button>
+    <div style="font-size: small; color: white; position: absolute; top: 24px; left: 730px;"><p>off 10%! Shop Vegetables</p></div>
+  
+  </div>
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.js"></script>
+</html>
